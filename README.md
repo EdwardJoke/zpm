@@ -18,6 +18,9 @@ A fast, lightweight Zig version manager written in Rust.
 # Install from source
 cargo install --path .
 
+# Install from crates.io
+cargo install zpm
+
 # Or install from crates.io (once published)
 cargo install zpm
 ```

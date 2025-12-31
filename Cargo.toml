@@ -2,7 +2,7 @@
 name = "zpm"
 version = "0.1.0"
 edition = "2024"
-license = "Apache2.0"
+license = "Apache 2.0"
 description = "A fast, lightweight Zig version manager written in Rust."
 
 [dependencies]
