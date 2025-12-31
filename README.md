@@ -2,7 +2,7 @@
 A fast, lightweight Zig version manager written in Rust.
 
 ## Demo
-![zpm demo](.assets/demo.gif)
+![zpm demo](assets/demo.gif)
 
 ## Features
 - Install multiple Zig versions (latest, master, stable, or specific versions)
