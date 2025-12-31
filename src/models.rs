@@ -8,8 +8,13 @@ pub struct PlatformEntry {
 
 #[derive(Deserialize, Debug)]
 pub struct VersionEntry {
-    #[serde(default)]
-    pub platforms: std::collections::HashMap<String, PlatformEntry>,
+    pub version: Option<String>,
+    pub date: Option<String>,
+    pub docs: Option<String>,
+    #[serde(rename = "stdDocs")]
+    pub std_docs: Option<String>,
+    #[serde(flatten)]
+    pub other_fields: std::collections::HashMap<String, serde_json::Value>,
 }
 
 #[derive(Deserialize, Debug)]

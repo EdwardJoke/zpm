@@ -7,7 +7,7 @@ use zpm::utils::{get_cache_dir, get_versions_dir};
 
 #[derive(Parser, Debug)]
 #[command(name = "zpm")]
-#[command(about = "Zig Package Manager - A version manager for Zig")]
+#[command(about = "Zig Package Manager")]
 #[command(long_about = None)]
 struct Cli {
     #[command(subcommand)]
@@ -52,7 +52,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let home_dir = env::var("HOME").expect("HOME environment variable not set");
     let versions_dir = get_versions_dir(&home_dir);
     let cache_dir = get_cache_dir(&home_dir);
-    
+
     // Create necessary directories if they don't exist
     create_dir_all(&versions_dir).await?;
     create_dir_all(&cache_dir).await?;
