@@ -2,6 +2,8 @@
 name = "zpm"
 version = "0.1.0"
 edition = "2024"
+license = "Apache2.0"
+description = "A fast, lightweight Zig version manager written in Rust."
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }
